@@ -95,5 +95,21 @@ this scheme works using pages on different machines as well.
 
 PiPedal would obtain access tokens using the existing scheme. 
 
+![](/img/IFrame%20AUTH.png)
+
+Content would be downloaded to the PiPedal server as follows. PiPedal will host the target site in an IFRAME, so that 
+it can intercept download requests. Users will browse normally on the target site. When they click on download buttons, 
+the target site will notify it's IFRAME parent, which is PiPedal client code. The client will then relay the URL to 
+the PiPedal server, which will download, and unpack requested files into place in the storage directories used by the 
+plugin.
+
+![](/img/HostedDownload.png)
+
+To put things more-or-less concretely into perspective, the dialog from which this would all take place is this one:
+
+![](/img/screenshot.png)
+
+
+
 
 
