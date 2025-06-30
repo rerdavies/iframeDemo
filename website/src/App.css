@@ -1,0 +1,31 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.icon-button {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    border-width: 0.75px;
+    border-style: solid;
+    border-color: #333;
+}
+.icon-button:hover {
+    background-color: #333;
+}   
+.icon-button:focus {
+    outline: none;
+    outline-offset: 0px;
+}
+.icon-button:active {
+    background-color: #444;
+}

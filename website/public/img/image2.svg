@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="96"
+   height="96"
+   viewBox="0 0 25.399999 25.4"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2">
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       id="filter556"
+       x="-0.28346457"
+       y="-0.28346457"
+       width="1.5669291"
+       height="1.5669291">
+      <feGaussianBlur
+         result="result0"
+         in="SourceGraphic"
+         stdDeviation="3"
+         id="feGaussianBlur526" />
+      <feTurbulence
+         type="turbulence"
+         baseFrequency="0.05"
+         seed="200"
+         numOctaves="5"
+         result="result1"
+         id="feTurbulence528" />
+      <feComposite
+         result="result2"
+         operator="in"
+         in2="result1"
+         in="result0"
+         id="feComposite530" />
+      <feSpecularLighting
+         lighting-color="rgb(255,255,255)"
+         surfaceScale="4"
+         result="result4"
+         specularConstant="8"
+         specularExponent="3"
+         in="result2"
+         id="feSpecularLighting534">
+        <feDistantLight
+           elevation="62"
+           azimuth="225"
+           id="feDistantLight532" />
+      </feSpecularLighting>
+      <feComposite
+         k1="1.8"
+         k3="0.8"
+         k2="-0.4"
+         in2="result2"
+         in="result4"
+         operator="arithmetic"
+         result="result91"
+         id="feComposite536" />
+      <feBlend
+         result="fbSourceGraphic"
+         mode="screen"
+         in2="result91"
+         id="feBlend538" />
+      <feComposite
+         in2="fbSourceGraphic"
+         in="result1"
+         result="result2"
+         operator="in"
+         id="feComposite540" />
+      <feComposite
+         in="fbSourceGraphic"
+         result="fbSourceGraphic"
+         operator="arithmetic"
+         k2="2"
+         k3="5"
+         in2="result2"
+         id="feComposite542" />
+      <feTurbulence
+         type="fractalNoise"
+         baseFrequency="0.04"
+         seed="35"
+         numOctaves="5"
+         result="result1"
+         id="feTurbulence544" />
+      <feComposite
+         k4="-0.1"
+         k1="0.9"
+         k2="0.3"
+         result="result2"
+         operator="arithmetic"
+         in2="result1"
+         in="fbSourceGraphic"
+         id="feComposite546" />
+      <feSpecularLighting
+         surfaceScale="3"
+         result="result4"
+         specularConstant="1"
+         specularExponent="30"
+         in="result2"
+         id="feSpecularLighting550">
+        <feDistantLight
+           elevation="62"
+           azimuth="225"
+           id="feDistantLight548" />
+      </feSpecularLighting>
+      <feComposite
+         in2="result2"
+         in="result4"
+         operator="atop"
+         result="result92"
+         id="feComposite552" />
+      <feBlend
+         mode="screen"
+         in2="result92"
+         id="feBlend554" />
+    </filter>
+    <filter
+       x="-0.47244095"
+       width="1.9448819"
+       y="-0.47244095"
+       height="1.9448819"
+       style="color-interpolation-filters:sRGB"
+       id="filter580">
+      <feGaussianBlur
+         result="result8"
+         stdDeviation="5"
+         in="SourceGraphic"
+         id="feGaussianBlur560" />
+      <feComposite
+         operator="xor"
+         in2="SourceGraphic"
+         result="result22"
+         id="feComposite562" />
+      <feComposite
+         k2="1"
+         operator="arithmetic"
+         result="result20"
+         in2="result22"
+         in="result22"
+         id="feComposite564" />
+      <feComposite
+         in2="result22"
+         in="result20"
+         operator="over"
+         result="result6"
+         id="feComposite566" />
+      <feOffset
+         in="result6"
+         result="result21"
+         id="feOffset568" />
+      <feDisplacementMap
+         in2="result20"
+         result="result4"
+         scale="100"
+         yChannelSelector="A"
+         xChannelSelector="A"
+         in="result21"
+         id="feDisplacementMap570" />
+      <feComposite
+         in2="SourceGraphic"
+         k1="1"
+         operator="arithmetic"
+         result="fbSourceGraphic"
+         k3="0.5"
+         in="result4"
+         id="feComposite572" />
+      <feComposite
+         in2="result4"
+         result="result12"
+         operator="in"
+         in="fbSourceGraphic"
+         id="feComposite574" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         result="result18"
+         id="feComposite576" />
+      <feComposite
+         result="result19"
+         in2="SourceGraphic"
+         operator="in"
+         in="result18"
+         id="feComposite578" />
+    </filter>
+  </defs>
+  <g
+     id="layer1">
+    <rect
+       style="fill:#ffb380;fill-rule:evenodd;stroke-width:0.264583"
+       id="rect582"
+       width="25.4"
+       height="25.4"
+       x="0"
+       y="0" />
+    <g
+       aria-label="2"
+       id="text236"
+       style="font-size:15.875px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans, Normal';stroke:#000000;stroke-width:0;stop-color:#000000">
+      <path
+         d="m 15.202596,13.376479 0.333375,-1.651 3.698875,-3.2861249 q 0.92075,-0.8255 1.4605,-1.412875 0.53975,-0.587375 0.762,-1.04775 0.238125,-0.47625 0.238125,-0.904875 0,-0.587375 -0.3175,-0.889 -0.3175,-0.301625 -0.85725,-0.301625 -0.5715,0 -1.11125,0.28575 -0.53975,0.28575 -1.27,0.889 l -1.127125,-1.571625 q 0.79375,-0.682625 1.730375,-1.143 0.9525,-0.460375 2.159,-0.460375 1.11125,0 1.80975,0.396875 0.714375,0.396875 1.04775,1.031875 0.333375,0.619125 0.333375,1.3335 0,1.000125 -0.4445,1.825625 -0.428625,0.8255 -1.17475,1.571625 -0.746125,0.73025 -1.7145,1.524 l -2.079625,1.7144999 v 0.07937 h 4.397375 l -0.41275,2.016125 z"
+         style="font-style:italic;font-weight:bold;-inkscape-font-specification:'Noto Sans, Bold Italic'"
+         id="path1451" />
+    </g>
+  </g>
+</svg>

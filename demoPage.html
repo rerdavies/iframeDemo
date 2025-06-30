@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <iframe id="hostFrame" src="http://localhost:5173"
+        style="position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px" style="border: 1px solid black;">
+        <p>Your browser does not support iframes.</p>
+    </iframe>
+    <script>
+        window.addEventListener('message', function (event) {
+            if (event.origin !== 'http://localhost:5173') {
+                console.error('Received message from unauthorized origin:', event.origin);
+                return;
+            }
+            alert('Message received from iframe: ' + event.data);
+        });
+    </script>
+</body >
+</html >
