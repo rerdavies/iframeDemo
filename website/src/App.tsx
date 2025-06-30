@@ -12,15 +12,8 @@ const downloadItems: DownloadItem[] = [
     { url: "/img/image3.svg", name: "File 3", description: "Description for File 3" },
 ];
 
-function normalDownload(url: string) {
-        const link = document.createElement("a");
-        link.href = url;
-        link.download = url.split('/').pop() || 'download';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-}
 
+// Post to parent of the current IFRAME for app-specific handling.
 function iframeParentDownload(url: string) {
     // convert url to an absolute ULR
     const absoluteUrl = new URL(url, window.location.origin).href;
@@ -30,11 +23,23 @@ function iframeParentDownload(url: string) {
     }, "*");
 }
 
+// Normal download 
+function normalDownload(url: string) {
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = url.split('/').pop() || 'download';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+}
+
+// Are we running inside a hosting IFRAME?
 function isIframeHosted() {
     const url = new URL(window.location.href);
     return url.searchParams.get("iframe_hosted") !== null;
 }
 
+// Conditionally download a file based on whether we are hosted in an IFRAME or not.
 function downloadFile(url: string)
 {
     if (isIframeHosted()) {
