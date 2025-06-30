@@ -21,7 +21,7 @@ function normalDownload(url: string) {
         document.body.removeChild(link);
 }
 
-function ilinkDownload(url: string) {
+function iframeParentDownload(url: string) {
     // convert url to an absolute ULR
     const absoluteUrl = new URL(url, window.location.origin).href;
     window.parent.postMessage({
@@ -35,15 +35,18 @@ function isIframeHosted() {
     return url.searchParams.get("iframe_hosted") !== null;
 }
 
+function downloadFile(url: string)
+{
+    if (isIframeHosted()) {
+        iframeParentDownload(url);
+    } else {
+        normalDownload(url);
+    }
+}
+
+
 function App() {
 
-    const downloadItem = (url: string) => {
-        if (isIframeHosted()) {
-            ilinkDownload(url);
-        } else {
-            normalDownload(url);
-        }
-    };
     return (
         <>
             <div style={{
@@ -66,7 +69,7 @@ function App() {
                                 <div style={{ flex: "1 1 auto", display: "flex", flexFlow: "column nowrap", alignItems: "start", justifyContent: "start", gap: 4 }}>
                                     <h4 style={{ padding: 0, margin: 0 }}>{item.name}</h4>
                                     <p style={{ padding: 0, margin: 0 }}>{item.description}</p>
-                                    <IconButton icon="download_2" onClick={()=>{downloadItem(item.url)}} />
+                                    <IconButton icon="download_2" onClick={()=>{downloadFile(item.url)}} />
                                 </div>
                             </div>
                         ))}
