@@ -91,4 +91,9 @@ in a web browser. Clicking on the download buttons in the target site will post 
 Pages that have addresses that start with `http://127.0.0.1:1573` and `file://`, respectively are definitely cross site. I have also double-checked that 
 this scheme works using pages on different machines as well.
 
+## Handling of Authentication
+
+PiPedal would obtain access tokens using the existing scheme. 
+
+
 
